@@ -1,0 +1,495 @@
+@font-face{
+    font-family : "Neusa next std";
+    src: url("../font/Neusa.Next/Neusa.next/NeusaNextStd-Medium.ttf");
+}
+@font-face{
+    font-family : "Neusa next pro";
+    src: url("../font/Neusa.Next/Neusa.next/NeusaNextPro-Light.ttf");
+}
+@font-face{
+    font-family: "Neusa bold";
+    src: url("../font/Neusa.Next/Neusa.Next/NeusaNextPro-Bold.ttf");
+}
+
+*{
+    margin : 0 ; 
+    padding : 0 ;
+    color : #dbdbdb;
+}
+html{
+    scroll-behavior: smooth;
+}
+.container{
+    width : 100%;
+    background-color : #1c1c1c;
+    min-height: 1900px;
+}
+.header{
+    width : 100%;
+    height : 1080px;
+    background-image: url(../img/backgroundheader2.png);
+    background-position: 900px -300px;
+    background-repeat: no-repeat;
+}
+.nav{
+    width : 90%;
+    display : flex;
+    margin: auto;
+    font-family: Neusa next std;
+    padding : 20px 0px;
+    height : 53px;
+    opacity: 0;
+}
+.active{
+    background-image: url(../img/active.png);
+    z-index: 99;
+    background-position: 90px;
+    background-repeat: no-repeat;
+}
+
+.logo a{
+    text-decoration: none;
+    font-size : 20px;
+}
+.logo img {
+    width : 20px;
+}
+.nav-items ul{
+    display: flex;
+    list-style: none;
+    font-size: 20px;
+    margin : 0px 75px;
+}
+.nav-items ul a{
+    text-decoration: none;
+}
+.nav-items ul li {
+    margin: 15px 35px;
+}
+
+.header{
+    width : 90%;
+    margin : auto;
+    font-family: Neusa next std;
+    margin-top: 50px;
+    display: flex;
+    flex: 1;
+}
+ .line {
+    height : 450px;
+    width : 15px;
+    background-color : #6aa730;
+    position: absolute;
+    left: 0%;
+    top : 17%;
+    opacity : 0;
+    animation : fade 1s forwards;
+}
+.title {
+    background-image: url(../img/backgroundheader1.png);
+    height : 1080px;
+    background-repeat: no-repeat;
+}
+.title h1{
+    font-size: 120px;
+    line-height: 154px;
+    width : 80%;
+}
+.title h1 span{
+    color : #EDF504;
+}
+.sub-title{
+    line-height : 40px;
+    word-spacing: 15px;
+    font-family : "Neusa next pro";
+    width : 90%;
+    font-size: 31px;
+    margin-top: 50px;
+    animation : fade1 1s forwards
+}
+.section {
+    height : 1080px;
+}
+.section .img img{
+    width : 88%;
+    margin: 35px 20px;
+}
+
+.cta{
+    display : flex;
+    width : 628px;
+    justify-content: space-around;
+    font-family: Neusa next std;
+}
+.cta button{
+    width : 280px;
+    height : 70px;
+    margin: 20px 0px 0px 50px;
+    font-size: 25px ;
+    border: none;
+    cursor: pointer;
+}
+.cta a button {
+    text-decoration: none;
+    color: #070707 ;
+   font-family: Neusa next std;
+}
+.cta .button1 button{
+    margin: 20px 0px 0px 45px;
+    background-color: #EDF504;
+    color: #070707 ;
+}
+.cta .button1 button:hover{
+    background-color : #cfd604;
+}
+.cta .button2 button{
+    background-color: #F57404;
+}
+.cta .button2 button:hover{
+    background-color: #d36709;
+}
+.course {
+    width : 100%
+}
+.headline-title {
+    text-align: center;
+    width : 100%;
+    margin-bottom: 100px;
+}
+.headline-title h1{
+    font-size: 100px;
+    font-family: Neusa next std;
+    letter-spacing: 5px;
+    line-height : 147px;
+}
+.headline-title h1 span {
+    color : #F57404;
+}
+.headline-title .subheadline{
+    font-family: Neusa next pro;
+    font-size : 39px;
+    letter-spacing: 2px;
+    opacity: .7;
+}
+.row{
+    width : 100%;
+    display : flex;
+    justify-content: center;
+    align-items: center;
+}
+.card{
+    width : 35%;
+    height : 579px;
+    margin: 20px 60px;
+    border-radius: 3% ;
+    display: flex;
+}
+.card-des{
+    width : 50%;
+    background-color : #393939;
+    padding-top: 30px ;
+    padding-left: 50px;
+    border-top-left-radius:3% ;
+    border-bottom-left-radius:3% ;
+}
+.card-des h2{
+    font-family: Neusa next std;
+    line-height : 35px;
+    letter-spacing: 2px;
+    font-family: 100px;
+}
+.yellow {
+    color : #EDF504;
+}
+.blue{
+    color : #3775A8;
+}
+.blue-bg{
+    background-color: #3775A8;
+}
+.yellow-bg{
+    background-color: #EDF504;
+}
+.red{
+    color : #DC4E36;
+}
+.red-bg{
+    background-color: #DC4E36;
+}
+.lightblue{
+    color : #0080CD;
+}
+.lightblue-bg{
+    background: #0080CD;
+}
+.orange{
+    color : #F88234;
+}
+.orange-bg{
+    background-color: #F88234;
+}
+.brightblue{
+    color :#00ACD7;
+}
+.brightblue-bg{
+    background-color: #00ACD7;
+}
+.card-des p{
+    width : 80%;
+    font-size: 18px;
+    line-height: 41px;
+    height : 290px;
+    font-family: Neusa next pro;
+    margin-top: 40px;
+    margin-bottom: 10%;
+    letter-spacing: 1px;
+    overflow-y: hidden  ;
+}
+.card-des .exp{
+    font-family: Neusa next pro;
+    font-size: 16px;
+}
+.exp a{
+    text-decoration: none;
+}
+.price{
+    width : 190px;
+    height : 50px;
+    background-color: #505050;;
+    display: flex;
+    margin-top: 10px;
+    box-sizing: border-box;
+    font-family: "Neusa bold";
+}
+
+.disc{
+    width : 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color : black;
+    font-size: 20px;
+    box-sizing: border-box;
+}
+.fee{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    background-color: #505050;
+}
+.price .fake{
+    opacity: .5;
+    font-size: 14px;
+}
+.hero-img{
+    background-color: #2A2A2A;
+    width : 50%;
+    display : flex;
+    justify-content: center;
+    align-items: center;
+    border-top-right-radius: 3%;
+    border-bottom-right-radius: 3%;
+}
+.hero-img img{
+    width : 70%;
+}
+.article { 
+    width : 100%;
+    margin-top: 300px;
+}
+.article-title{
+    width: 100%;
+    font-size: 50px;
+    font-family: Neusa next std;
+    text-align: center;
+    letter-spacing: 4px;
+}
+
+.article-list{
+    display: flex;
+    justify-content: center;
+    margin-top: 80px;
+    position: relative;
+}
+.article-list  .box{
+    width : 23%;
+    height: 300px;
+    background-repeat: no-repeat;
+    position: relative;
+    background-color: #1c1c1c ;
+    box-sizing: border-box;
+}   
+.img1{
+    background-image: url(../img/thumb/6g1.jpg)
+}
+.img2{
+    background-image: url(../img/thumb/jobvacancy.jpg);
+}
+.img3 {
+    background-image: url(../img/thumb/ProgramminLanguages.jpg);
+}
+.article-list .box:nth-child(2), .article-list .box:nth-child(3){
+    margin-left: 30px;
+}
+.black-bg{
+    background-color: rgba(0, 0, 0, .6);
+    overflow-x: hidden;
+    position : absolute;
+    bottom : 0;
+    left: 0;
+    right: 0;
+    padding-top :10px;
+    padding-left: 20px;
+    padding-bottom: 10px;
+}
+.black-bg h3 { 
+    font-family: Neusa next std;
+}
+.black-bg p{
+    font-family: Neusa next pro;
+    font-size: 13px;
+}
+.see-more{
+    width : 100%; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top : 3%;
+}
+.cta-line {
+    width : 5px;
+    height : 25px;
+}
+.see-more a { 
+    text-decoration: none;
+    font-family: Neusa next std;
+    margin-left: 10px   ;
+}
+.see-more a:hover { 
+    color : #DC4E36;        
+}
+.bg   {
+    background-image: url(../img/book.png);
+    background-position: 300px;
+    height: 40vh;
+    margin-top: 100px;  
+    display : flex;
+    justify-content: center;
+    align-items: center;
+}
+.quote h1{
+    font-family: Neusa next std;
+    font-size: 80px;
+}
+.quote p{
+    display: block;
+    font-family: Neusa next pro;
+    margin : 10px 20px;
+    font-size: 25px;
+    opacity: .5;
+}
+
+
+
+.footer {
+    width : 100%;
+    display : flex;
+    justify-content: center;
+    padding-top : 10vh;
+    height : 45vh;
+    background-color: #171615;
+}
+.footer h2{
+    font-family: Neusa next std;
+}
+.section-left{
+    width : 50%
+}
+.text{
+    width : 400px;
+    font-size: 19px;
+    margin-top: 4vh;
+}
+.social-medias{
+    display: flex;
+    width : 50%;
+    margin-top: 40px;
+    align-items: center;
+}
+.potrait img {
+    width : 10px
+}
+ .landscape img{
+    width : 25px;
+   
+}
+.youtube img {
+    width : 33px;
+}
+.youtube{
+    margin-left: 20px;
+}
+.landscape{
+    margin-left: 20px;
+}
+.section-right {
+    width : 20%;
+}
+.contact h2{
+    margin-bottom :20px;
+    font-size: 30px;
+}
+.contact p{
+    margin-bottom: 17px;
+    font-size: 20px;
+}
+.visit-us{
+    margin-top : 120px
+}
+.nav-items-footer ul{
+    display :flex;
+    margin-top : 10px;
+    font-family: Neusa next std;
+}
+.nav-items-footer a{
+    text-decoration: none;
+    list-style: none;
+    margin-top: 20px;
+}
+.nav-items-footer a:nth-child(2),
+.nav-items-footer a:nth-child(3),
+.nav-items-footer a:nth-child(4){
+    margin-left : 30px;
+}
+.copyright{
+    margin-top : 10px;
+    opacity: .5;
+}
+
+@keyframes fade{
+    from{
+        opacity: 0 ; 
+    } to {
+        opacity : 1;
+    }
+}
+
+@keyframes fade1{
+    from{
+        opacity: 0 ; 
+    } to {
+        opacity : .77;
+    }
+}
+@keyframes anim1{
+    from{ 
+        transform: translateY(-100px);
+        opacity: 0;
+    }
+    to{
+        transform: translateY(0);
+        opacity: 1;
+    }
+}

@@ -1,0 +1,298 @@
+@font-face{
+    font-family : "Neusa next std";
+    src: url("../font/Neusa.Next/Neusa.next/NeusaNextStd-Medium.ttf");
+}
+@font-face{
+    font-family : "Neusa next pro";
+    src: url("../font/Neusa.Next/Neusa.next/NeusaNextPro-Light.ttf");
+}
+@font-face{
+    font-family: "Neusa bold";
+    src: url("../font/Neusa.Next/Neusa.Next/NeusaNextPro-Bold.ttf");
+}
+
+*{
+    margin : 0 ; 
+    padding : 0 ;
+    color : #dbdbdb;
+}
+body {
+    background-color: #1c1c1c;
+}
+    .nav{
+        width : 90%;
+        display : flex;
+        margin: auto;
+        font-family: Neusa next std;
+        padding : 30px 0px;
+        height : 53px;
+    }
+    .active{
+        background-image: url(../img/active.png);
+        z-index: 99;
+        background-position: 245px;
+        background-repeat: no-repeat;
+    }
+    
+    .logo a{
+        text-decoration: none;
+        font-size : 20px;
+    }
+    .logo img {
+        width : 20px;
+    }
+    .nav-items ul{
+        display: flex;
+        list-style: none;
+        font-size: 20px;
+        margin : 0px 75px;
+    }
+    .nav-items ul a{
+        text-decoration: none;
+    }
+    .nav-items ul li {
+        margin: 15px 35px;
+    }
+    .header{
+        width :100%;
+        background-image: url(../img/classcourse.png);
+        height : 1080px;
+        background-repeat: no-repeat;
+        margin: auto;
+        text-align: center;
+        box-sizing: border-box;
+        background-attachment: fixed;
+    }
+    .intro-wrapper{
+        padding-top: 12%;
+        box-sizing: border-box;
+    }
+    .intro-wrapper h1{
+        font-family: Neusa next std;
+        font-size: 120px;
+    }
+    .intro-wrapper .promo{
+        font-family : Neusa next pro;
+        font-size : 40px;
+        opacity : .77;
+    }
+    #hint{
+        font-family : Neusa next pro;
+        font-size : 16px;
+        opacity : .77;
+        padding-top: 100px;
+    }
+
+
+    .row {
+        width : 100%;
+        display : flex;
+        align-items: flex-start;
+        
+        justify-content: space-around;
+        font-family: Neusa next pro;
+    }
+    
+    .section {
+        width : 25%;
+        background-color : #505050;
+        position: relative;
+        top : -450px;
+    }
+    .title{
+        text-align: center;
+    }
+    .title h1 {
+        font-family: Neusa next std;
+        font-size : 40px;
+        padding-top : 20px;
+        box-sizing: border-box;
+        cursor: pointer;
+    }
+    .title h1:hover {
+        transform: translateY(-4px);
+    }
+    .title p {
+        font-size: 13px;
+        opacity: .77;
+        margin-bottom: 30px;
+    }
+    .elipses{
+        width : 100%;
+        text-align: center;
+        margin-top: 30px;
+        display: none;
+    }
+    .elipse {
+        width : 80%;
+        background : white;
+        height : 30px;
+        margin-top : 100px;
+        border-radius: 15px 15px;
+        margin: auto;
+    }
+    .elipse p{
+        text-align: center;
+        padding-top: 7px;
+        color :black
+    }
+    .button{
+        text-align: center;
+        margin : 30px 0px;
+        font-family: Neusa next std;
+        font-size: 20px;
+        display: none;
+    }
+    .elipse .button a{
+        text-decoration : none;
+    }
+    .button a button {
+        width : 80px;
+        height : 30px;
+        border-radius: 15px 15px;
+        border: none;
+        color : black;
+        cursor: pointer;
+    }
+
+    .price-wrapper{
+        display: none;
+    }
+    .price{
+        width : 190px;
+        height : 50px;
+        background-color:#494541;;
+        display: flex;
+        margin-top: 40px;
+        box-sizing: border-box;
+        font-family: "Neusa bold";
+        margin: auto;
+        margin-bottom: 40px;
+    }
+    .disc{
+        width : 30%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color : black;
+        font-size: 20px;
+        box-sizing: border-box;
+    }
+    .fee{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+        
+    }
+    .price .fake{
+        opacity: .5;
+        font-size: 14px;
+    }
+    /* .grey{
+       color: #8f8d8d;
+    }
+    .grey-bg{
+        background-color: #8f8d8d;
+    } */
+    .white{
+        color: #dbdbdb;
+    }
+    .white-bg{
+        background-color: #dbdbdb;
+    }
+    .yellow{
+        color : #cfd604;
+    }
+    .yellow-bg{
+        background-color: #cfd604;
+    }
+    .orange{
+        color : #F88234
+    }
+    .orange-bg{
+        background-color: #F88234;
+    }
+    
+    
+
+
+
+    .orange{
+        color : #F88234;
+    }
+    .footer {
+        width : 100%;
+        display : flex;
+        justify-content: center;
+        padding-top : 10vh;
+        height : 45vh;
+        background-color: #171615;
+    }
+    .footer h2{
+        font-family: Neusa next std;
+    }
+    .section-left{
+        width : 50%
+    }
+    .text{
+        width : 400px;
+        font-size: 19px;
+        margin-top: 4vh;
+    }
+    .social-medias{
+        display: flex;
+        width : 50%;
+        margin-top: 40px;
+        align-items: center;
+    }
+    .potrait img {
+        width : 10px
+    }
+    .landscape img{
+        width : 25px;
+    
+    }
+    .youtube img {
+        width : 33px;
+    }
+    .youtube{
+        margin-left: 20px;
+    }
+    .landscape{
+        margin-left: 20px;
+    }
+    .section-right {
+        width : 20%;
+    }
+    .contact h2{
+        margin-bottom :20px;
+        font-size: 30px;
+    }
+    .contact p{
+        margin-bottom: 17px;
+        font-size: 20px;
+    }
+    .visit-us{
+        margin-top : 120px
+    }
+    .nav-items-footer ul{
+        display :flex;
+        margin-top : 10px;
+        font-family: Neusa next std;
+    }
+    .nav-items-footer a{
+        text-decoration: none;
+        list-style: none;
+        margin-top: 20px;
+    }
+    .nav-items-footer a:nth-child(2),
+    .nav-items-footer a:nth-child(3),
+    .nav-items-footer a:nth-child(4){
+        margin-left : 30px;
+    }
+    .copyright{
+        margin-top : 10px;
+        opacity: .5;
+    }
